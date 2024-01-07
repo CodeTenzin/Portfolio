@@ -113,6 +113,7 @@ a {
 
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -122,6 +123,7 @@ a {
 
   .badge--small {
     font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
   }
 }
 
@@ -192,16 +194,19 @@ a {
 /* Cards */
 .card {
   border-radius: 7px;
-  box-shadow: 0 0 20px 10px #f3f3f3;
+  /* box-shadow: 0 0 20px 10px #f3f3f3; */
+  box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.44);
+
   overflow: hidden;
 }
 
-.card__header,
-.card__body {
+/* .card__header, */
+.card__body,
+.card__footer {
   padding: 2rem 3rem;
 }
 
-.card--primary .card__header {
+/* .card--primary .card__header {
   background: var(--color-primary);
   color: #fff;
 }
@@ -209,6 +214,45 @@ a {
 .card--secondary .card__header {
   background: var(--color-secondary);
   color: #fff;
+} */
+
+/* Project */
+/* TODO: fix the image */
+header img {
+  max-width: 100%;
+  max-height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.project__name {
+  margin-top: 0;
+  font-size: 2.4rem;
+}
+
+.project__description {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 2rem;
+}
+
+/* TODO: compare sizes */
+@media screen and (min-width: 1024px) {
+  .project__name {
+    font-size: 1.7rem;
+  }
+
+  .project__description {
+    font-size: 1.5rem;
+  }
 }
 
 /* 
