@@ -258,6 +258,11 @@ a {
 } */
 
 /* Project */
+
+.project {
+  transition: transform 0.5s ease-out;
+}
+
 /* TODO: fix the image */
 /* Fixed. */
 header img {
@@ -275,6 +280,10 @@ header img {
 .project__description {
   font-size: 2rem;
   font-weight: 300;
+}
+
+.project:hover {
+  transform: scale(1.05);
 }
 
 .card__footer {
@@ -588,6 +597,17 @@ header img {
   .block-skills {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Projects Block */
+.block-projects .grid {
+  gap: 4rem;
+  /* gap: 6rem 4rem; */
+}
+
+.block-projects .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 /* 
