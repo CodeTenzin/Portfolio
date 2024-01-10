@@ -128,8 +128,24 @@ a {
   }
 }
 
+/* Lists */
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-primary);
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
 /* Icons */
-/* TODO: complete the icon containers. */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
 .icon-container {
   background: #f3f9fa;
   width: 64px;
@@ -379,6 +395,41 @@ header img {
   }
 }
 
+/* Collapsibles */
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90);
+  transition: transform 0.3s;
+}
+
+.collapsible__content {
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  /* transition: max-height 0.3s; */
+  transition: all;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  /* display: block; */
+  max-height: 100vh;
+  opacity: 1;
+}
+
 /* Blocks */
 .block {
   --padding-vertical: 6rem;
@@ -412,6 +463,79 @@ header img {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* Navigation Bar*/
+.nav {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.icon-container img {
+  width: 100px;
+  height: 100px;
+}
+
+/* TODO: Image logo overflow. React Circle. */
+.nav__list {
+  width: 100%;
+  /* margin: 0; */
+  margin-bottom: 0;
+}
+
+.nav__item {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.nav__item > a {
+  color: #d2d0db;
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: #ffff;
+}
+
+.nav__toggler {
+  opacity: 1;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+}
+
+/* TODO: Highlight toggler on expand. */
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 0 3px #666;
+  border-radius: 5px;
+}
+
+/* TODO: center the logo */
+/* in <span class="icon-container nav__brand"> */
+/* .nav__brand {
+  transform: translateY(3px);
+} */
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    border: 0;
+  }
 }
 
 /* 
