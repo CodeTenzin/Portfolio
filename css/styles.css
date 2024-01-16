@@ -237,7 +237,7 @@ a {
 .card {
   border-radius: 7px;
   /* box-shadow: 0 0 20px 10px #f3f3f3; */
-  box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.44);
+  box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.3);
 
   overflow: hidden;
 }
@@ -245,7 +245,8 @@ a {
 /* .card__header, */
 .card__body,
 .card__footer {
-  padding: 2rem 3rem;
+  /* padding: 2rem 3rem; */
+  padding: 1.5rem 3rem;
 }
 
 /* .card--primary .card__header {
@@ -306,7 +307,7 @@ header img {
 }
 
 /* TODO: compare sizes */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .project__name {
     font-size: 1.7rem;
   }
@@ -344,6 +345,12 @@ header img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* @media screen and (min-width: 768px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
 
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
