@@ -46,7 +46,7 @@ h3 {
 }
 
 p {
-  margin-top: 0;
+  /* margin-top: 0; */
 }
 
 @media screen and (min-width: 1024px) {
@@ -101,6 +101,8 @@ a {
   font-weight: bold;
   white-space: nowrap;
   font-size: 2rem;
+
+  margin: 0 1rem;
 }
 
 .badge--primary {
@@ -257,8 +259,13 @@ a {
   color: #fff;
 } */
 
-/* Project */
+.card__header img {
+  width: 100%;
+  /* height: auto; */
+  height: 30vh;
+}
 
+/* Project */
 .project {
   transition: transform 0.5s ease-out;
 }
@@ -292,7 +299,11 @@ header img {
   align-items: center;
   flex-wrap: wrap;
   align-content: flex-start;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+.card__footer .badge {
+  margin: 0;
 }
 
 /* TODO: compare sizes */
@@ -308,7 +319,7 @@ header img {
 
 /* Quotes */
 .quote {
-  font-size: 3rem;
+  font-size: 2rem;
   font-style: italic;
   color: var(--color-body-darker);
   line-height: 1.3;
@@ -323,6 +334,10 @@ header img {
 /* Grids */
 .grid {
   display: grid;
+}
+
+.grid--1x3 {
+  margin-bottom: 3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -345,10 +360,12 @@ header img {
 
 .about__image {
   position: relative;
+  align-self: center;
 }
 
 .about__image > img {
   width: 100%;
+  margin: 2rem 0 2rem;
 }
 
 .about__image > .icon__container {
@@ -357,10 +374,22 @@ header img {
   right: -15px;
 }
 
+.grid .quote {
+  align-self: center;
+  margin: 0;
+}
+
 @media screen and (min-width: 768px) {
   .about .quote {
+    /* font-size: 2rem; */
+    margin: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about .quote {
     font-size: 2.4rem;
-    margin-left: 6rem;
+    margin: 1rem;
   }
 }
 
@@ -442,8 +471,9 @@ header img {
 
 /* Blocks */
 .block {
-  --padding-vertical: 6rem;
-  padding: var(--padding-vertical) 2rem;
+  /* --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem; */
+  padding: 2rem;
   /* border: 2px solid red; */
 }
 
@@ -486,20 +516,24 @@ header img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 1rem;
+  padding: 1rem;
   align-items: center;
 }
 
 .icon-container img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: auto;
 }
 
-/* TODO: Image logo overflow. React Circle. */
+.nav_logo {
+  background: linear-gradient(45deg, #ff6b6b, #3a1c71);
+  margin: 0;
+  border-radius: 0 15px 0 15px;
+}
+
 .nav__list {
   width: 100%;
-  /* margin: 0; */
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .nav__item {
@@ -583,13 +617,12 @@ header img {
 
 /* Skills Block */
 /* TODO: container overflow. */
-.block-skills {
+.block-skill {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 6rem);
+  grid-template-columns: repeat(6, 1fr);
+  /* grid-template-rows: repeat(2, 6rem); */
   font-size: 2rem;
   font-weight: 600;
-  justify-items: center;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -609,6 +642,11 @@ header img {
 .block-projects .card {
   max-width: 500px;
   margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  background: #232323;
 }
 
 /* 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav collapsible">
+      <h2 class="nav_logo">TW</h2>
+      <img class="icon nav__toggler" src="./images/menu.svg" alt="" />
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">About</a></li>
+        <li class="nav__item"><a href="#">Skills</a></li>
+        <li class="nav__item"><a href="#">Projects</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+        <li class="nav__item"><a href="#">Resume</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Hi, I'm Tenzin.</h1>
+          <p class="hero__tagline">Full Stack Web Developer.</p>
+          <a href="#" class="btn btn--accent btn--stretched">Contact</a>
+        </header>
+        <img class="hero__image" src="images/portrait2.png" alt="" />
+      </div>
+    </section>
+
+    <!-- About -->
+    <div class="block">
+      <header class="block__header">
+        <h2>About</h2>
+      </header>
+      <div class="card about">
+        <div class="grid grid--1x2">
+          <div class="about__image">
+            <img src="images/portrait1.png" alt="a self portrait" />
+          </div>
+          <blockquote class="quote">
+            <p>
+              Welcome to my corner of the web! I'm Tezin Wangyal, a passionate
+              web developer dedicated to becoming a full-stack expert. With a
+              Bachelor's degree in Computer Science from Queens College, my
+              journey into coding is fueled by a relentless curiosity and love
+              for learning. This website is my canvas, showcasing the projects
+              that reflect my dedication to mastering the art and science of web
+              development.
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

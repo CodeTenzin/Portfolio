@@ -14,6 +14,34 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- Navigation -->
+    <nav class="nav collapsible">
+      <a href="#" class="icon-container nav__brand">
+        <img src="images/logo.png" alt="" />
+      </a>
+      <img class="icon nav__toggler" src="./images/menu.svg" alt="" />
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">About</a></li>
+        <li class="nav__item"><a href="#">Skills</a></li>
+        <li class="nav__item"><a href="#">Projects</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+        <li class="nav__item"><a href="#">Resume</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Hi, I'm Tenzin.</h1>
+          <p class="hero__tagline">Full Stack Web Developer.</p>
+          <a href="#" class="btn btn--accent btn--stretched">Contact</a>
+        </header>
+        <img class="hero__image" src="images/portrait2.png" alt="" />
+      </div>
+    </section>
+
+    <!-- About -->
     <div class="block">
       <header class="block__header">
         <h2>About</h2>
@@ -22,9 +50,6 @@
         <div class="grid grid--1x2">
           <div class="about__image">
             <img src="images/portrait1.png" alt="a self portrait" />
-            <span class="icon__container">
-              <img class="icon--small" src="images/quotation.svg" alt="" />
-            </span>
           </div>
           <blockquote class="quote">
             <p>
@@ -35,6 +60,262 @@
             </p>
           </blockquote>
         </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <section class="block container">
+      <header class="block__header">
+        <h2>Technical Skills</h2>
+      </header>
+      <h3>Programming Languages</h3>
+      <ul class="list block-skill">
+        <li><span class="badge badge--primary">Javascript</span></li>
+        <li><span class="badge badge--primary">Typescript</span></li>
+        <li><span class="badge badge--primary">Java</span></li>
+        <li><span class="badge badge--primary">C++</span></li>
+      </ul>
+
+      <h3>Web Technologies</h3>
+      <ul class="list block-skill">
+        <li><span class="badge badge--primary">React</span></li>
+        <li><span class="badge badge--primary">Node.js</span></li>
+        <li><span class="badge badge--primary">Next.js</span></li>
+        <li><span class="badge badge--primary">SQL</span></li>
+        <li><span class="badge badge--primary">HTML</span></li>
+        <li><span class="badge badge--primary">CSS</span></li>
+        <li><span class="badge badge--primary">Bootstrap</span></li>
+        <li><span class="badge badge--primary">Tailwind</span></li>
+      </ul>
+
+      <h3>Tools & Version Control</h3>
+      <ul class="list block-skill">
+        <li><span class="badge badge--primary">Git</span></li>
+        <li><span class="badge badge--primary">Docker</span></li>
+      </ul>
+    </section>
+
+    <!-- Project -->
+    <section class="block container block-projects">
+      <header class="block__header">
+        <h2>Projects</h2>
+      </header>
+      <div class="grid grid--1x3">
+        <div class="project">
+          <div class="card card--primary">
+            <header class="card__header">
+              <img src="images/image1.jpg" alt="" />
+            </header>
+            <div class="card__body">
+              <h3 class="project__name">Portfolio</h3>
+              <p class="project__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
+                Veritatis excepturi dolorum cumque.
+              </p>
+              <button class="btn btn--outline btn--block">Source Code</button>
+            </div>
+            <div class="card__footer">
+              <span class="badge badge--primary badge--small">HTML</span>
+              <span class="badge badge--primary badge--small">CSS</span>
+              <span class="badge badge--primary badge--small">Javacript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="card card--primary">
+            <header class="card__header">
+              <img src="images/image2.jpg" alt="" />
+            </header>
+            <div class="card__body">
+              <h3 class="project__name">Portfolio</h3>
+              <p class="project__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
+                Veritatis excepturi dolorum cumque.
+              </p>
+              <button class="btn btn--outline btn--block">Source Code</button>
+            </div>
+            <div class="card__footer">
+              <span class="badge badge--primary badge--small">HTML</span>
+              <span class="badge badge--primary badge--small">CSS</span>
+              <span class="badge badge--primary badge--small">Javacript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="card card--primary">
+            <header class="card__header">
+              <img src="images/image3.jpg" alt="" />
+            </header>
+            <div class="card__body">
+              <h3 class="project__name">Portfolio</h3>
+              <p class="project__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
+                Veritatis excepturi dolorum cumque.
+              </p>
+              <button class="btn btn--outline btn--block">Source Code</button>
+            </div>
+            <div class="card__footer">
+              <span class="badge badge--primary badge--small">HTML</span>
+              <span class="badge badge--primary badge--small">CSS</span>
+              <span class="badge badge--primary badge--small">Javacript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid--1x3">
+        <div class="project">
+          <div class="card card--primary">
+            <header class="card__header">
+              <img src="images/image1.jpg" alt="" />
+            </header>
+            <div class="card__body">
+              <h3 class="project__name">Portfolio</h3>
+              <p class="project__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
+                Veritatis excepturi dolorum cumque.
+              </p>
+              <button class="btn btn--outline btn--block">Source Code</button>
+            </div>
+            <div class="card__footer">
+              <span class="badge badge--primary badge--small">HTML</span>
+              <span class="badge badge--primary badge--small">CSS</span>
+              <span class="badge badge--primary badge--small">Javacript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="card card--primary">
+            <header class="card__header">
+              <img src="images/image2.jpg" alt="" />
+            </header>
+            <div class="card__body">
+              <h3 class="project__name">Portfolio</h3>
+              <p class="project__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
+                Veritatis excepturi dolorum cumque.
+              </p>
+              <button class="btn btn--outline btn--block">Source Code</button>
+            </div>
+            <div class="card__footer">
+              <span class="badge badge--primary badge--small">HTML</span>
+              <span class="badge badge--primary badge--small">CSS</span>
+              <span class="badge badge--primary badge--small">Javacript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="card card--primary">
+            <header class="card__header">
+              <img src="images/image3.jpg" alt="" />
+            </header>
+            <div class="card__body">
+              <h3 class="project__name">Portfolio</h3>
+              <p class="project__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
+                Veritatis excepturi dolorum cumque.
+              </p>
+              <button class="btn btn--outline btn--block">Source Code</button>
+            </div>
+            <div class="card__footer">
+              <span class="badge badge--primary badge--small">HTML</span>
+              <span class="badge badge--primary badge--small">CSS</span>
+              <span class="badge badge--primary badge--small">Javacript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid--1x3">
+        <div class="project">
+          <div class="card card--primary">
+            <header class="card__header">
+              <img src="images/image1.jpg" alt="" />
+            </header>
+            <div class="card__body">
+              <h3 class="project__name">Portfolio</h3>
+              <p class="project__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
+                Veritatis excepturi dolorum cumque.
+              </p>
+              <button class="btn btn--outline btn--block">Source Code</button>
+            </div>
+            <div class="card__footer">
+              <span class="badge badge--primary badge--small">HTML</span>
+              <span class="badge badge--primary badge--small">CSS</span>
+              <span class="badge badge--primary badge--small">Javacript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="card card--primary">
+            <header class="card__header">
+              <img src="images/image2.jpg" alt="" />
+            </header>
+            <div class="card__body">
+              <h3 class="project__name">Portfolio</h3>
+              <p class="project__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
+                Veritatis excepturi dolorum cumque.
+              </p>
+              <button class="btn btn--outline btn--block">Source Code</button>
+            </div>
+            <div class="card__footer">
+              <span class="badge badge--primary badge--small">HTML</span>
+              <span class="badge badge--primary badge--small">CSS</span>
+              <span class="badge badge--primary badge--small">Javacript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="card card--primary">
+            <header class="card__header">
+              <img src="images/image3.jpg" alt="" />
+            </header>
+            <div class="card__body">
+              <h3 class="project__name">Portfolio</h3>
+              <p class="project__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
+                Veritatis excepturi dolorum cumque.
+              </p>
+              <button class="btn btn--outline btn--block">Source Code</button>
+            </div>
+            <div class="card__footer">
+              <span class="badge badge--primary badge--small">HTML</span>
+              <span class="badge badge--primary badge--small">CSS</span>
+              <span class="badge badge--primary badge--small">Javacript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Callout -->
+    <div class="callout callout--primary">
+      <div class="grid grid--1x2">
+        <div class="callout__content">
+          <h2 class="callout__heading">Get in Touch</h2>
+          <p>
+            You can reach me via email or any of the links below. Looking
+            forward to collaborate with you!
+          </p>
+        </div>
+        <a href="#" class="btn btn--secondary btn--stretched">Reach Me</a>
       </div>
     </div>
 
