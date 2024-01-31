@@ -16,6 +16,7 @@
 /* Topography */
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -76,6 +77,10 @@ a {
   color: var(--color-accent);
   font-size: 2rem;
   font-weight: bold;
+}
+
+.link-arrow.project-link {
+  display: block;
 }
 
 .link-arrow::after {
