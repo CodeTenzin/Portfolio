@@ -16,16 +16,14 @@
   <body>
     <!-- Navigation -->
     <nav class="nav collapsible">
-      <a href="#" class="icon-container nav__brand">
-        <img src="images/logo.png" alt="" />
-      </a>
+      <h2 class="nav_logo">TW</h2>
       <img class="icon nav__toggler" src="./images/menu.svg" alt="" />
       <ul class="list nav__list collapsible__content">
-        <li class="nav__item"><a href="#">About</a></li>
-        <li class="nav__item"><a href="#">Skills</a></li>
-        <li class="nav__item"><a href="#">Projects</a></li>
-        <li class="nav__item"><a href="#">Contact</a></li>
-        <li class="nav__item"><a href="#">Resume</a></li>
+        <li class="nav__item"><a href="#about">About</a></li>
+        <li class="nav__item"><a href="#skills">Skills</a></li>
+        <li class="nav__item"><a href="#projects">Projects</a></li>
+        <li class="nav__item"><a href="#contact">Contact</a></li>
+        <!-- <li class="nav__item"><a href="#">Resume</a></li> -->
       </ul>
     </nav>
 
@@ -42,7 +40,7 @@
     </section>
 
     <!-- About -->
-    <div class="block">
+    <div id="about" class="block">
       <header class="block__header">
         <h2>About</h2>
       </header>
@@ -53,10 +51,13 @@
           </div>
           <blockquote class="quote">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
-              totam ipsum facere optio provident cum obcaecati, fuga quasi
-              natus, dignissimos atque inventore cumque in velit beatae. Magnam
-              corrupti ratione rerum!
+              Welcome to my corner of the web! I'm Tenzin Wangyal, a passionate
+              web developer dedicated to becoming a full-stack expert. With a
+              Bachelor's degree in Computer Science from Queens College, my
+              journey into coding is fueled by a relentless curiosity and love
+              for learning. This website is my canvas, showcasing the projects
+              that reflect my dedication to mastering the art and science of web
+              development.
             </p>
           </blockquote>
         </div>
@@ -64,7 +65,7 @@
     </div>
 
     <!-- Skills -->
-    <section class="block container">
+    <section id="skills" class="block container">
       <header class="block__header">
         <h2>Technical Skills</h2>
       </header>
@@ -73,12 +74,16 @@
         <li><span class="badge badge--primary">Javascript</span></li>
         <li><span class="badge badge--primary">Typescript</span></li>
         <li><span class="badge badge--primary">Java</span></li>
+        <li><span class="badge badge--primary">Python</span></li>
         <li><span class="badge badge--primary">C++</span></li>
       </ul>
 
       <h3>Web Technologies</h3>
       <ul class="list block-skill">
         <li><span class="badge badge--primary">React</span></li>
+        <li><span class="badge badge--primary">React Router</span></li>
+        <li><span class="badge badge--primary">Redux</span></li>
+        <li><span class="badge badge--primary">Zustand</span></li>
         <li><span class="badge badge--primary">Node.js</span></li>
         <li><span class="badge badge--primary">Next.js</span></li>
         <li><span class="badge badge--primary">SQL</span></li>
@@ -86,6 +91,9 @@
         <li><span class="badge badge--primary">CSS</span></li>
         <li><span class="badge badge--primary">Bootstrap</span></li>
         <li><span class="badge badge--primary">Tailwind</span></li>
+        <li><span class="badge badge--primary">Chakra UI</span></li>
+        <li><span class="badge badge--primary">Zod</span></li>
+        <li><span class="badge badge--primary">Axios</span></li>
       </ul>
 
       <h3>Tools & Version Control</h3>
@@ -96,29 +104,39 @@
     </section>
 
     <!-- Project -->
-    <section class="block container block-projects">
+    <section id="projects" class="block container block-projects">
       <header class="block__header">
         <h2>Projects</h2>
       </header>
-      <div class="grid grid--1x3">
+      <!-- <div class="grid grid--1x3"> -->
+      <div class="grid grid--1x2 grid--1x3">
         <div class="project">
           <div class="card card--primary">
             <header class="card__header">
-              <img src="images/image1.jpg" alt="" />
+              <img src="images/game-hub.png" alt="" />
             </header>
             <div class="card__body">
-              <h3 class="project__name">Portfolio</h3>
+              <h3 class="project__name">Video Game Discory</h3>
               <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
-                Veritatis excepturi dolorum cumque.
+                A view game discovery app. Users can search games for various
+                gaming platform, genres with sorting and search functions.
+                <a
+                  target="_blank"
+                  class="link-arrow project-link"
+                  href="https://game-hub-ten-black.vercel.app"
+                  >Link</a
+                >
               </p>
-              <button class="btn btn--outline btn--block">Source Code</button>
+              <a target="_blank" href="https://github.com/TenzinCode/game-hub"
+                ><button class="btn btn--outline btn--block">
+                  Source Code
+                </button></a
+              >
             </div>
             <div class="card__footer">
-              <span class="badge badge--primary badge--small">HTML</span>
-              <span class="badge badge--primary badge--small">CSS</span>
-              <span class="badge badge--primary badge--small">Javacript</span>
+              <span class="badge badge--primary badge--small">Typescript</span>
+              <span class="badge badge--primary badge--small">React</span>
+              <span class="badge badge--primary badge--small">Chakra UI</span>
             </div>
           </div>
         </div>
@@ -126,21 +144,32 @@
         <div class="project">
           <div class="card card--primary">
             <header class="card__header">
-              <img src="images/image2.jpg" alt="" />
+              <img src="images/expense-tracker.png" alt="" />
             </header>
             <div class="card__body">
-              <h3 class="project__name">Portfolio</h3>
+              <h3 class="project__name">Expense Tracker</h3>
               <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
-                Veritatis excepturi dolorum cumque.
+                An expense tracker form to add and filter expenses. Uses
+                bootstrap and zod validation library.
+                <a
+                  target="_blank"
+                  class="link-arrow project-link"
+                  href="https://expense-tracker-deploy-black.vercel.app"
+                  >Link</a
+                >
               </p>
-              <button class="btn btn--outline btn--block">Source Code</button>
+              <a
+                target="_blank"
+                href="https://github.com/TenzinCode/expense-tracker-deploy"
+              >
+                <button class="btn btn--outline btn--block">Source Code</button>
+              </a>
             </div>
             <div class="card__footer">
-              <span class="badge badge--primary badge--small">HTML</span>
-              <span class="badge badge--primary badge--small">CSS</span>
-              <span class="badge badge--primary badge--small">Javacript</span>
+              <span class="badge badge--primary badge--small">Typescript</span>
+              <span class="badge badge--primary badge--small">React</span>
+              <span class="badge badge--primary badge--small">Bootstrap</span>
+              <span class="badge badge--primary badge--small">Zod</span>
             </div>
           </div>
         </div>
@@ -148,45 +177,30 @@
         <div class="project">
           <div class="card card--primary">
             <header class="card__header">
-              <img src="images/image3.jpg" alt="" />
+              <img src="images/open-weather.png" alt="" />
             </header>
             <div class="card__body">
-              <h3 class="project__name">Portfolio</h3>
+              <h3 class="project__name">Open Weather</h3>
               <p class="project__description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Dolores, unde fugiat! Error eveniet iste quidem voluptates.
                 Veritatis excepturi dolorum cumque.
               </p>
-              <button class="btn btn--outline btn--block">Source Code</button>
-            </div>
-            <div class="card__footer">
-              <span class="badge badge--primary badge--small">HTML</span>
-              <span class="badge badge--primary badge--small">CSS</span>
-              <span class="badge badge--primary badge--small">Javacript</span>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="grid grid--1x3">
-        <div class="project">
-          <div class="card card--primary">
-            <header class="card__header">
-              <img src="images/image1.jpg" alt="" />
-            </header>
-            <div class="card__body">
-              <h3 class="project__name">Portfolio</h3>
-              <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
-                Veritatis excepturi dolorum cumque.
-              </p>
-              <button class="btn btn--outline btn--block">Source Code</button>
+              <a
+                target="_blank"
+                href="https://github.com/TenzinCode/Open-Weather"
+              >
+                <button class="btn btn--outline btn--block">Source Code</button>
+              </a>
             </div>
             <div class="card__footer">
-              <span class="badge badge--primary badge--small">HTML</span>
+              <span class="badge badge--primary badge--small">Typescript</span>
+              <span class="badge badge--primary badge--small">React</span>
               <span class="badge badge--primary badge--small">CSS</span>
-              <span class="badge badge--primary badge--small">Javacript</span>
+              <span class="badge badge--primary badge--small"
+                >Open Weather API</span
+              >
             </div>
           </div>
         </div>
@@ -194,21 +208,28 @@
         <div class="project">
           <div class="card card--primary">
             <header class="card__header">
-              <img src="images/image2.jpg" alt="" />
+              <img src="images/todo.png" alt="" />
             </header>
             <div class="card__body">
-              <h3 class="project__name">Portfolio</h3>
+              <h3 class="project__name">To Do App</h3>
               <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
-                Veritatis excepturi dolorum cumque.
+                Developed a robust ToDo application using React, showcasing my
+                proficiency in front-end development. This responsive and
+                user-friendly app allows seamless task management, providing
+                users with an intuitive interface to add, and delete tasks.
+                <a
+                  target="_blank"
+                  href=" https://github.com/TenzinCode/To-Do-App"
+                  ><button class="btn btn--outline btn--block">
+                    Source Code
+                  </button></a
+                >
               </p>
-              <button class="btn btn--outline btn--block">Source Code</button>
             </div>
             <div class="card__footer">
-              <span class="badge badge--primary badge--small">HTML</span>
-              <span class="badge badge--primary badge--small">CSS</span>
-              <span class="badge badge--primary badge--small">Javacript</span>
+              <span class="badge badge--primary badge--small">Typescript</span>
+              <span class="badge badge--primary badge--small">React</span>
+              <span class="badge badge--primary badge--small">Bootstrap</span>
             </div>
           </div>
         </div>
@@ -216,89 +237,30 @@
         <div class="project">
           <div class="card card--primary">
             <header class="card__header">
-              <img src="images/image3.jpg" alt="" />
+              <img src="images/pocket-gnews.png" alt="" />
             </header>
             <div class="card__body">
-              <h3 class="project__name">Portfolio</h3>
+              <h3 class="project__name">Pocket GNews</h3>
               <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
-                Veritatis excepturi dolorum cumque.
+                A low-level Node.js app with seamless interaction between GNews
+                and Pocket APIs. Bookmarks news articles based on user-input.
+                Utilizes OAuth 2.0 Three Legged for secure authentication and
+                ensured synchronization.
               </p>
-              <button class="btn btn--outline btn--block">Source Code</button>
+              <a
+                target="_blank"
+                href="https://github.com/TenzinCode/Pocket-News"
+                ><button class="btn btn--outline btn--block">
+                  Source Code
+                </button></a
+              >
             </div>
             <div class="card__footer">
+              <span class="badge badge--primary badge--small">Javascript</span>
+              <span class="badge badge--primary badge--small">Node.js</span>
+              <span class="badge badge--primary badge--small">Pocket API</span>
+              <span class="badge badge--primary badge--small">GNews API</span>
               <span class="badge badge--primary badge--small">HTML</span>
-              <span class="badge badge--primary badge--small">CSS</span>
-              <span class="badge badge--primary badge--small">Javacript</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid grid--1x3">
-        <div class="project">
-          <div class="card card--primary">
-            <header class="card__header">
-              <img src="images/image1.jpg" alt="" />
-            </header>
-            <div class="card__body">
-              <h3 class="project__name">Portfolio</h3>
-              <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
-                Veritatis excepturi dolorum cumque.
-              </p>
-              <button class="btn btn--outline btn--block">Source Code</button>
-            </div>
-            <div class="card__footer">
-              <span class="badge badge--primary badge--small">HTML</span>
-              <span class="badge badge--primary badge--small">CSS</span>
-              <span class="badge badge--primary badge--small">Javacript</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="card card--primary">
-            <header class="card__header">
-              <img src="images/image2.jpg" alt="" />
-            </header>
-            <div class="card__body">
-              <h3 class="project__name">Portfolio</h3>
-              <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
-                Veritatis excepturi dolorum cumque.
-              </p>
-              <button class="btn btn--outline btn--block">Source Code</button>
-            </div>
-            <div class="card__footer">
-              <span class="badge badge--primary badge--small">HTML</span>
-              <span class="badge badge--primary badge--small">CSS</span>
-              <span class="badge badge--primary badge--small">Javacript</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="card card--primary">
-            <header class="card__header">
-              <img src="images/image3.jpg" alt="" />
-            </header>
-            <div class="card__body">
-              <h3 class="project__name">Portfolio</h3>
-              <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores, unde fugiat! Error eveniet iste quidem voluptates.
-                Veritatis excepturi dolorum cumque.
-              </p>
-              <button class="btn btn--outline btn--block">Source Code</button>
-            </div>
-            <div class="card__footer">
-              <span class="badge badge--primary badge--small">HTML</span>
-              <span class="badge badge--primary badge--small">CSS</span>
-              <span class="badge badge--primary badge--small">Javacript</span>
             </div>
           </div>
         </div>
@@ -306,7 +268,7 @@
     </section>
 
     <!--Callout -->
-    <div class="callout callout--primary">
+    <div id="contact" class="callout callout--primary">
       <div class="grid grid--1x2">
         <div class="callout__content">
           <h2 class="callout__heading">Get in Touch</h2>

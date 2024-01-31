@@ -138,7 +138,7 @@ a {
 /* Lists */
 .list {
   list-style: none;
-  padding-left: 0;
+  padding: 1rem;
   color: var(--color-primary);
 }
 
@@ -280,7 +280,7 @@ a {
 header img {
   width: 100%;
   /* height: auto; */
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
@@ -376,7 +376,7 @@ header img {
 
 .about__image > img {
   width: 100%;
-  margin: 2rem 0 2rem;
+  margin: 0.5rem 0 0.5rem;
 }
 
 .about__image > .icon__container {
@@ -642,6 +642,7 @@ header img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  gap: 10px;
 }
 
 @media screen and (min-width: 768px) {
