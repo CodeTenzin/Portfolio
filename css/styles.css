@@ -573,6 +573,14 @@ header img {
   cursor: pointer;
 }
 
+.nav-icon-container {
+  padding-left: 2rem;
+}
+
+.nav-icon-container a {
+  padding: 0.5rem;
+}
+
 /* TODO: Highlight toggler on expand. */
 .nav.collapsible--expanded .nav__toggler {
   opacity: 1;
