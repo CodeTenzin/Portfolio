@@ -432,6 +432,10 @@ header img {
   text-align: center;
 }
 
+.callout-reachme {
+  transform: translateY(5rem);
+}
+
 @media screen and (min-width: 768px) {
   .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
@@ -674,6 +678,7 @@ header img {
   justify-content: space-between;
   align-items: center;
   background-color: #232323;
+  padding-top: 6rem;
 }
 
 /* 
