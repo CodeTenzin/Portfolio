@@ -81,6 +81,7 @@ a {
 
 .link-arrow.project-link {
   display: block;
+  margin-top: 1rem;
 }
 
 .link-arrow::after {
