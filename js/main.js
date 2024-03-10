@@ -35,7 +35,7 @@ loadMore.addEventListener("click", () => {
           >
           <a
             target="_blank"
-            href=" https://github.com/TenzinCode/To-Do-App"
+            href="https://github.com/CodeTenzin/To-Do-App.git"
             ><button class="btn btn--outline btn--block">
               Source Code
             </button></a
@@ -68,7 +68,7 @@ loadMore.addEventListener("click", () => {
         </p>
         <a
           target="_blank"
-          href="https://github.com/TenzinCode/Pocket-News"
+          href="https://github.com/CodeTenzin/Pocket-News.git"
           ><button class="btn btn--outline btn--block">
             Source Code
           </button></a
@@ -139,7 +139,7 @@ loadMore.addEventListener("click", () => {
                   >Demo</a
                 >
               </p>
-              <a target="_blank" href="https://github.com/TenzinCode/game-hub"
+              <a target="_blank" href="https://github.com/CodeTenzin/game-hub.git"
                 ><button class="btn btn--outline btn--block">
                   Source Code
                 </button></a
@@ -172,7 +172,7 @@ loadMore.addEventListener("click", () => {
               </p>
               <a
                 target="_blank"
-                href="https://github.com/TenzinCode/expense-tracker-deploy"
+                href="https://github.com/CodeTenzin/Expense-Tracker.git"
               >
                 <button class="btn btn--outline btn--block">Source Code</button>
               </a>
@@ -201,7 +201,7 @@ loadMore.addEventListener("click", () => {
 
               <a
                 target="_blank"
-                href="https://github.com/TenzinCode/Open-Weather"
+                href="https://github.com/CodeTenzin/Open-Weather.git"
               >
                 <button class="btn btn--outline btn--block">Source Code</button>
               </a>
