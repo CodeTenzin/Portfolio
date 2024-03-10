@@ -12,6 +12,10 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8e35a1d5b7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Navigation -->
@@ -58,8 +62,9 @@
         <header class="block__header hero__content">
           <h1 class="block__heading">Hi, I'm Tenzin.</h1>
           <p class="hero__tagline">Full Stack Web Developer.</p>
+          <!-- href="./downloads/Resume.pdf" -->
           <a
-            href="./downloads/Resume.pdf"
+            href="www.google.com"
             class="btn btn--accent btn--stretched"
             target="_blank"
             download
@@ -127,7 +132,7 @@
         <li><span class="badge badge--primary">C++</span></li>
       </ul>
 
-      <h3>Technologies</h3>
+      <h3>Web Technologies</h3>
       <ul class="list block-skill">
         <li><span class="badge badge--primary">React</span></li>
         <li><span class="badge badge--primary">Node</span></li>
@@ -136,14 +141,19 @@
         <li><span class="badge badge--primary">RESTful API’s</span></li>
         <li><span class="badge badge--primary">Redux</span></li>
         <li><span class="badge badge--primary">Zustand</span></li>
-        <li><span class="badge badge--primary">HTML</span></li>
+        <li><span class="badge badge--primary">jQuery</span></li>
+        <li><span class="badge badge--primary">Mongoose</span></li>
+        <li><span class="badge badge--primary">D3.js</span></li>
         <li><span class="badge badge--primary">CSS</span></li>
+        <li><span class="badge badge--primary">SASS</span></li>
+        <li><span class="badge badge--primary">HTML</span></li>
       </ul>
 
       <h3>Databases</h3>
       <ul class="list block-skill">
         <li><span class="badge badge--primary">SQL</span></li>
         <li><span class="badge badge--primary">MongoDB</span></li>
+        <li><span class="badge badge--primary">PostgreSQL</span></li>
       </ul>
 
       <h3>Others</h3>
@@ -165,7 +175,7 @@
         <h2>Projects</h2>
       </header>
       <!-- <div class="grid grid--1x3"> -->
-      <div class="grid grid--1x2 grid--1x3">
+      <div id="project-grid" class="grid grid--1x2 grid--1x3">
         <div class="project">
           <div class="card card--primary">
             <header class="card__header">
@@ -180,7 +190,7 @@
                   target="_blank"
                   class="link-arrow project-link"
                   href="https://game-hub-ten-black.vercel.app"
-                  >Link</a
+                  >Demo</a
                 >
               </p>
               <a target="_blank" href="https://github.com/TenzinCode/game-hub"
@@ -211,7 +221,7 @@
                   target="_blank"
                   class="link-arrow project-link"
                   href="https://expense-tracker-ruddy-tau.vercel.app"
-                  >Link</a
+                  >Demo</a
                 >
               </p>
               <a
@@ -260,70 +270,11 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="project">
-          <div class="card card--primary">
-            <header class="card__header">
-              <img src="images/todo.png" alt="" />
-            </header>
-            <div class="card__body">
-              <h3 class="project__name">To Do App</h3>
-              <p class="project__description">
-                A robust ToDo application using React, showcasing my proficiency
-                in front-end development. This responsive and user-friendly app
-                allows seamless task management, providing users with an
-                intuitive interface to add, and delete tasks.
-                <a
-                  target="_blank"
-                  href=" https://github.com/TenzinCode/To-Do-App"
-                  ><button class="btn btn--outline btn--block">
-                    Source Code
-                  </button></a
-                >
-              </p>
-            </div>
-            <div class="card__footer">
-              <span class="badge badge--primary badge--small">Typescript</span>
-              <span class="badge badge--primary badge--small">React</span>
-              <span class="badge badge--primary badge--small">Bootstrap</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="card card--primary">
-            <header class="card__header">
-              <img src="images/pocket-gnews.png" alt="" />
-            </header>
-            <div class="card__body">
-              <h3 class="project__name">Pocket GNews</h3>
-              <p class="project__description">
-                <!-- A low-level Node.js app with seamless interaction between GNews
-                and Pocket APIs. Bookmarks news articles based on user-input.
-                Utilizes OAuth 2.0 Three Legged for secure authentication and
-                ensured synchronization. -->
-                A low level Node.js app integrating GNews and Pocket APIs to
-                bookmark news articles based on user input, employing OAuth 2.0
-                Three Legged for secure authentication and synchronization
-              </p>
-              <a
-                target="_blank"
-                href="https://github.com/TenzinCode/Pocket-News"
-                ><button class="btn btn--outline btn--block">
-                  Source Code
-                </button></a
-              >
-            </div>
-            <div class="card__footer">
-              <span class="badge badge--primary badge--small">Javascript</span>
-              <span class="badge badge--primary badge--small">Node.js</span>
-              <span class="badge badge--primary badge--small">HTML</span>
-              <span class="badge badge--primary badge--small"
-                >RESTful API's</span
-              >
-            </div>
-          </div>
-        </div>
+      <div class="load-more">
+        <p>More</p>
+        <i class="fa-solid fa-chevron-down fa-2xl"></i>
       </div>
     </section>
 
